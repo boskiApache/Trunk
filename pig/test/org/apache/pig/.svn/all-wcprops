@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1358051/pig/trunk/test/org/apache/pig
+END
+TestMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1243637/pig/trunk/test/org/apache/pig/TestMain.java
+END
+TestLoadStoreFuncLifeCycle.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1351547/pig/trunk/test/org/apache/pig/TestLoadStoreFuncLifeCycle.java
+END
+TestStoreFuncWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1245722/pig/trunk/test/org/apache/pig/TestStoreFuncWrapper.java
+END
+TestStoreFuncMetadataWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1245722/pig/trunk/test/org/apache/pig/TestStoreFuncMetadataWrapper.java
+END
+TestTypedOutputEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1337429/pig/trunk/test/org/apache/pig/TestTypedOutputEvalFunc.java
+END
+TestAlgebraicEvalWithParameterizedReturnType.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1335797/pig/trunk/test/org/apache/pig/TestAlgebraicEvalWithParameterizedReturnType.java
+END
+TestPrimitiveEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1337429/pig/trunk/test/org/apache/pig/TestPrimitiveEvalFunc.java
+END

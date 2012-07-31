@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1348264/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc
+END
+IteratingAccumulatorCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1348264/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/IteratingAccumulatorCount.java
+END
+AllFirstLetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/AllFirstLetter.java
+END
+VARBAG.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1159319/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/VARBAG.java
+END
+BadMonitored.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1157287/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadMonitored.java
+END
+BadUdf3.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadUdf3.java
+END
+Swap.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/Swap.java
+END
+TestBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1304148/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TestBoolean.java
+END
+Fred.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/Fred.java
+END
+TestWarningFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TestWarningFunc.java
+END
+UDFContextTestUDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1199416/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/UDFContextTestUDF.java
+END
+DECODE.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/DECODE.java
+END
+TOBAG.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1159319/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TOBAG.java
+END
+AppendIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1308737/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/AppendIndex.java
+END
+CreateMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/CreateMap.java
+END
+IteratingAccumulatorIsEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1348264/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/IteratingAccumulatorIsEmpty.java
+END
+Udfcachetest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/Udfcachetest.java
+END
+TestConstructorArgs.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TestConstructorArgs.java
+END
+TestEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TestEvalFunc.java
+END
+BadUdf2.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadUdf2.java
+END
+NonAlgNonAccCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1341154/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/NonAlgNonAccCount.java
+END
+BadUdf4.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadUdf4.java
+END
+GoodMonitored.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1157287/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/GoodMonitored.java
+END
+IteratingAccumulatorSum.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1348264/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/IteratingAccumulatorSum.java
+END
+BadMonitoredDefault.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1157287/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadMonitoredDefault.java
+END
+TOBAG2.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1306557/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TOBAG2.java
+END
+TOMAP.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1098813/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/TOMAP.java
+END
+Nil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1150970/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/Nil.java
+END
+UdfContextFrontend.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1328186/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/UdfContextFrontend.java
+END
+BadUdf.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/BadUdf.java
+END
+CreateTupleBag.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/CreateTupleBag.java
+END
+UPPER.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/udfs/java/org/apache/pig/test/udf/evalfunc/UPPER.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby
+END
+JrubyAccumulatorEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/JrubyAccumulatorEvalFunc.java
+END
+JrubyEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/JrubyEvalFunc.java
+END
+PigJrubyLibrary.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/PigJrubyLibrary.java
+END
+RubySchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/RubySchema.java
+END
+RubyDataBag.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/RubyDataBag.java
+END
+JrubyScriptEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/JrubyScriptEngine.java
+END
+JrubyAlgebraicEvalFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/JrubyAlgebraicEvalFunc.java
+END
+RubyDataByteArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1308737/pig/trunk/src/org/apache/pig/scripting/jruby/RubyDataByteArray.java
+END

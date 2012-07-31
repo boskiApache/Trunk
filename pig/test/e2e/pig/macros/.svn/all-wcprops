@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1163020/pig/trunk/test/e2e/pig/macros
+END
+macro1.pig
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1163020/pig/trunk/test/e2e/pig/macros/macro1.pig
+END
+macro_bad1.pig
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1163020/pig/trunk/test/e2e/pig/macros/macro_bad1.pig
+END

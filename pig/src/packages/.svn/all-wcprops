@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/asf/!svn/ver/1228470/pig/trunk/src/packages
+END
+pig-setup-conf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1171347/pig/trunk/src/packages/pig-setup-conf.sh
+END
+update-pig-env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1150968/pig/trunk/src/packages/update-pig-env.sh
+END

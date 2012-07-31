@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1234226/pig/trunk/test/e2e/pig/lib
+END
+hadoop-examples.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/lib/hadoop-examples.jar
+END
+hadoop-0.23.0-streaming.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1234226/pig/trunk/test/e2e/pig/lib/hadoop-0.23.0-streaming.jar
+END
+hadoop-streaming.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1087340/pig/trunk/test/e2e/pig/lib/hadoop-streaming.jar
+END

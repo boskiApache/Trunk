@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1358483/pig/trunk/src/org/apache/pig/newplan/logical/relational
+END
+LogicalRelationalOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1356921/pig/trunk/src/org/apache/pig/newplan/logical/relational/LogicalRelationalOperator.java
+END
+LOForEach.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1302089/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOForEach.java
+END
+LogToPhyTranslationVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1356921/pig/trunk/src/org/apache/pig/newplan/logical/relational/LogToPhyTranslationVisitor.java
+END
+LOInnerLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1088700/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOInnerLoad.java
+END
+LOSplitOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1029876/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOSplitOutput.java
+END
+MapSideMergeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1354124/pig/trunk/src/org/apache/pig/newplan/logical/relational/MapSideMergeValidator.java
+END
+LOCogroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1095968/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOCogroup.java
+END
+LOCube.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1342975/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOCube.java
+END
+LOLimit.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1143614/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOLimit.java
+END
+LOLoad.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1358483/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOLoad.java
+END
+LODistinct.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1050503/pig/trunk/src/org/apache/pig/newplan/logical/relational/LODistinct.java
+END
+SchemaNotDefinedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1005230/pig/trunk/src/org/apache/pig/newplan/logical/relational/SchemaNotDefinedException.java
+END
+LOFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1143614/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOFilter.java
+END
+LONative.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1034623/pig/trunk/src/org/apache/pig/newplan/logical/relational/LONative.java
+END
+LOSort.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1090335/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOSort.java
+END
+LOUnion.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1148106/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOUnion.java
+END
+LOCross.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1146574/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOCross.java
+END
+LOGenerate.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1090335/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOGenerate.java
+END
+LogicalPlan.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1329567/pig/trunk/src/org/apache/pig/newplan/logical/relational/LogicalPlan.java
+END
+LOSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1005230/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOSplit.java
+END
+LOStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1198031/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOStream.java
+END
+LOStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1351547/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOStore.java
+END
+LOJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1180766/pig/trunk/src/org/apache/pig/newplan/logical/relational/LOJoin.java
+END
+LogicalSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1159319/pig/trunk/src/org/apache/pig/newplan/logical/relational/LogicalSchema.java
+END
+LogicalRelationalNodesVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1342975/pig/trunk/src/org/apache/pig/newplan/logical/relational/LogicalRelationalNodesVisitor.java
+END
