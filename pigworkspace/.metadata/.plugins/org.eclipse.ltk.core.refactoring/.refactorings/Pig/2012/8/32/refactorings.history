@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Pig&apos;&#x0A;- Original project: &apos;Pig&apos;&#x0A;- Original elements:&#x0A;     pig_1342041174216.log&#x0A;     pig_1342047086220.log" description="Delete elements" element1="pig_1342041174216.log" element2="pig_1342047086220.log" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1344296260732" subPackages="false" version="1.0"/>
+</session>
