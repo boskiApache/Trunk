@@ -18,6 +18,8 @@
 package org.apache.pig.tools.grunt;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import jline.ConsoleReader;
@@ -39,39 +41,34 @@ public class Grunt
     
     BufferedReader in;
     PigServer pig;
-    GruntParser parser;    
+    ConsoleReader consoleReader;
 
     public Grunt(BufferedReader in, PigContext pigContext) throws ExecException
     {
         this.in = in;
-        this.pig = new PigServer(pigContext);
-        
-        if (in != null)
-        {
-            parser = new GruntParser(in);
-            parser.setParams(pig);    
-        }
+        this.pig = new PigServer(pigContext);        
     }
 
     public void setConsoleReader(ConsoleReader c)
     {
+    	this.consoleReader = c;
         c.addCompletor(new PigCompletorAliases(pig));
         c.addCompletor(new PigCompletor());
-        parser.setConsoleReader(c);
     }
 
     public void run() {        
         boolean verbose = "true".equalsIgnoreCase(pig.getPigContext().getProperties().getProperty("verbose"));
-        while(true) {
+        PigStatsUtil.getEmptyPigStats();
+        
+        GruntDriver driver = new GruntDriver(pig, true);
+
+        while(!driver.isDone()) {
             try {
-                PigStatsUtil.getEmptyPigStats();
-                parser.setInteractive(true);
-                parser.parseStopOnError();
-                break;                            
+            	String line = consoleReader.readLine();
+                driver.process(new BufferedReader(new InputStreamReader(new ByteArrayInputStream(line.getBytes()))), true);
             } catch(Throwable t) {
                 LogUtils.writeLog(t, pig.getPigContext().getProperties().getProperty("pig.logfile"), 
                         log, verbose, "Pig Stack Trace");
-                parser.ReInit(in);
             }
         }
     }
@@ -80,8 +77,8 @@ public class Grunt
         boolean verbose = "true".equalsIgnoreCase(pig.getPigContext().getProperties().getProperty("verbose"));
         try {
             PigStatsUtil.getEmptyPigStats();
-            parser.setInteractive(false);
-            return parser.parseStopOnError();
+            GruntDriver driver = new GruntDriver(pig, false);
+            return driver.process(in, false);
         } catch (Throwable t) {
             LogUtils.writeLog(t, pig.getPigContext().getProperties().getProperty("pig.logfile"), 
                     log, verbose, "Pig Stack Trace");
@@ -91,11 +88,12 @@ public class Grunt
     
     public void checkScript(String scriptFile) throws Throwable {
         boolean verbose = "true".equalsIgnoreCase(pig.getPigContext().getProperties().getProperty("verbose"));
+        GruntDriver driver = new GruntDriver(pig, false);
+        driver.setValidateEachStatement(true);
+
         try {
-            parser.setInteractive(false);
-            parser.setValidateEachStatement(true);
             boolean dontPrintOutput = true;
-            parser.processExplain(null, scriptFile, false, "text", null, 
+            driver.processExplain(null, scriptFile, false, "text", null, 
                     new ArrayList<String>(), new ArrayList<String>(),
                     dontPrintOutput);
         } catch (Throwable t) {

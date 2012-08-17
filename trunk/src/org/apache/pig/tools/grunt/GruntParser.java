@@ -79,6 +79,7 @@ import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 
 @SuppressWarnings("deprecation")
+@Deprecated
 public class GruntParser extends PigScriptParser {
 
     private static final Log log = LogFactory.getLog(GruntParser.class);
@@ -456,9 +457,7 @@ public class GruntParser extends PigScriptParser {
     }
 
     @Override
-    protected void processScript(String script, boolean batch, 
-                                 List<String> params, List<String> files) 
-        throws IOException, ParseException {
+    protected void processScript(String script, boolean batch, List<String> params, List<String> files) throws IOException, ParseException {
         
         if(mExplain == null) { // process only if not in "explain" mode
             if (script == null) {

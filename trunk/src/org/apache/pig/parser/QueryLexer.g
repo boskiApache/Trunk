@@ -290,7 +290,88 @@ NUM_OP_GTE : '>='
 
 NUM_OP_NE : '!='
 ;
-    
+
+HELP : 'HELP'
+;
+
+CAT : 'CAT'
+;
+
+QUIT : 'QUIT'
+;
+
+CD  : 'CD'
+;
+
+PWD : 'PWD'
+;
+
+LS  : 'LS'
+;
+
+MOVE  : 'MV'
+;
+
+MKDIR : 'MKDIR'
+;
+
+REMOVE  : 'RM'
+;
+
+REMOVEFORCE : 'RMF'
+;
+
+SET : 'SET'
+;
+
+FS  : 'FS'
+;
+
+SH  : 'SH'
+;
+
+COPYFROMLOCAL : 'COPYFROMLOCAL'
+;
+
+COPYTOLOCAL : 'COPYTOLOCAL'
+;
+
+DUMP  : 'DUMP'
+;
+
+DESCRIBE  : 'DESCRIBE'
+;
+
+ALIASES : 'ALIASES'
+;
+
+HISTORY : 'HISTORY'
+;
+
+N : '-N'
+;
+
+KILL  : 'KILL'
+;
+
+REGISTER  : 'REGISTER'
+;
+
+RUN : 'RUN'
+;
+
+EXEC  : 'EXEC'
+;
+
+PARM  : '-PARM'
+;
+
+PARAM_FILE: '-PARAM_FILE'
+;
+
+SCRIPT  : 'SCRIPT'
+;
+
 fragment DIGIT : '0'..'9'
 ;
 
@@ -312,7 +393,8 @@ IDENTIFIER_L : ( ID DCOLON ) => ( ID DCOLON IDENTIFIER_L )
 
 fragment FLOATINGPOINT : INTEGER ( PERIOD INTEGER )? | PERIOD INTEGER 
 ;
-    
+
+
 INTEGER: ( DIGIT )+
 ;
 
@@ -359,7 +441,7 @@ COLON : ':'
 
 DOLLAR : '$'
 ;
-            
+
 WS  :  ( ' ' | '\r' | '\t' | '\u000C' | '\n' ) { $channel = HIDDEN; }
 ;
     
@@ -419,3 +501,10 @@ MINUS : '-'
 
 QMARK : '?'
 ;
+
+PATH : (LETTER | DIGIT | SPECIALCHAR | '/' | '\\' | '.'| '-')+
+;
+//PATH  : (~('(' | ')' | ';' | '\\r' | ' ' | '\\t' | '\\n'))+
+//;
+
+ 

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 /**
  * Grammar file for Pig tree parser (visitor for default data type insertion).
  *
@@ -101,15 +101,69 @@ query : ^( QUERY statement* )
 statement : general_statement
           | split_statement
           | realias_statement
+          | grunt_statement
 ;
 
-split_statement : split_clause
+split_statement : ^( STATEMENT split_clause TEXT )
 ;
 
-realias_statement : realias_clause
+realias_statement : ^( STATEMENT realias_clause TEXT )
 ;
 
-general_statement : ^( STATEMENT ( alias { aliases.add( $alias.name ); } )? op_clause parallel_clause? )
+grunt_statement : fs_statement
+                | help
+                | quit
+;
+
+fs_statement : CAT
+                |
+                CD
+                |
+                PWD
+                |
+                LS
+                |
+                MOVE
+                |
+                MKDIR
+                |
+                REMOVE
+                |
+                REMOVEFORCE
+                |
+                SET
+                |
+                FS
+                |
+                SH
+                |
+                COPYFROMLOCAL
+                |
+                COPYTOLOCAL
+                |
+                DUMP
+                |
+                DESCRIBE
+                |
+                ALIASES
+                |
+                HISTORY
+                |
+                KILL
+                |
+                REGISTER
+                |
+                EXEC
+                
+;
+
+help : HELP
+;
+
+quit : QUIT
+;
+
+general_statement : ^( STATEMENT ( alias { aliases.add( $alias.name ); } )? op_clause parallel_clause? TEXT)
 ;
 
 realias_clause : ^(REALIAS alias IDENTIFIER)

@@ -167,14 +167,14 @@ scope {
  | realias_statement
 ;
 
-split_statement : split_clause
+split_statement : ^( STATEMENT split_clause TEXT )
 ;
 
-realias_statement : realias_clause
+realias_statement : ^( STATEMENT realias_clause TEXT )
 ;
 
 general_statement 
-: ^( STATEMENT ( alias { $statement::alias = $alias.name; } )? oa = op_clause parallel_clause? )
+: ^( STATEMENT ( alias { $statement::alias = $alias.name; } )? oa = op_clause parallel_clause? TEXT)
   {
       Operator op = builder.lookupOperator( $oa.alias );
       builder.setParallel( (LogicalRelationalOperator)op, $statement::parallel );

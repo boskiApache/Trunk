@@ -223,7 +223,7 @@ public class QueryParserUtils {
         return null;
     }
     
-    static QueryParser createParser(CommonTokenStream tokens) {
+    public static QueryParser createParser(CommonTokenStream tokens) {
         return createParser(tokens, 0);
     }
     

@@ -75,6 +75,7 @@ tokens {
     TOBAG;
     TOMAP;
     TOTUPLE;
+    TEXT;
 }
 
 @header {
@@ -150,6 +151,7 @@ query : statement* EOF
 ;
 
 statement : SEMI_COLON!
+          | grunt_statement
           | general_statement
           | foreach_statement
           | split_statement  
@@ -158,23 +160,128 @@ statement : SEMI_COLON!
           | realias_statement
 ;
 
-import_statement : import_clause SEMI_COLON!
+import_statement : import_clause SEMI_COLON
+                  -> ^(STATEMENT import_clause TEXT[$import_statement.text] )
 ;
 
-inline_statement : inline_clause SEMI_COLON!
+inline_statement : inline_clause SEMI_COLON
+                  -> ^(STATEMENT inline_clause TEXT[$inline_statement.text] )
 ;
 
-split_statement : split_clause SEMI_COLON!
+split_statement : split_clause SEMI_COLON
+                  -> ^(STATEMENT split_clause TEXT[$split_statement.text] )
 ;
 
 general_statement : ( alias EQUAL )? (op_clause parallel_clause? | LEFT_PAREN op_clause parallel_clause? RIGHT_PAREN) SEMI_COLON 
-                 -> ^( STATEMENT alias? op_clause parallel_clause? )
+                 -> ^( STATEMENT alias? op_clause parallel_clause? TEXT[$general_statement.text] )
 ;
 
-realias_statement : realias_clause SEMI_COLON!
+realias_statement : realias_clause SEMI_COLON
+                -> ^( STATEMENT realias_clause TEXT[$realias_statement.text] )
 ;
 
-realias_clause : alias EQUAL identifier 
+grunt_statement : help
+                | fs_statement
+                | quit
+;
+
+help : HELP
+;
+
+fs_statement :
+     CAT getpath
+     -> ^(CAT getpath)
+     |
+     CD getpathwithdoubledot
+     -> ^(CD getpathwithdoubledot)
+     |
+     PWD
+     -> ^(PWD)
+     |
+     LS
+     -> ^(LS)
+     |
+     LS getpath
+     -> ^(LS getpath)
+     |
+     MOVE getpath getpath
+     -> ^(MOVE getpath getpath)
+     |
+     MKDIR getpath
+     -> ^(MKDIR getpath)
+     |
+     REMOVE getpath
+     -> ^(REMOVE getpath)
+     |
+     REMOVEFORCE getpath
+     -> ^(REMOVEFORCE getpath)
+     |
+     SET getkey getvalue
+     -> ^(SET getkey getvalue)
+     |
+     FS getpath+
+     -> ^(FS getpath+)
+     |
+     SH getvalue+
+     -> ^(SH getvalue+)
+     |
+     COPYFROMLOCAL getpath getpath
+     -> ^(COPYFROMLOCAL getpath getpath)
+     |
+     COPYTOLOCAL getpath getpath
+     -> ^(COPYTOLOCAL getpath getpath)
+     |
+     DUMP IDENTIFIER_L
+     -> ^(DUMP IDENTIFIER_L)
+     |
+     DESCRIBE IDENTIFIER_L?
+     -> ^(DESCRIBE IDENTIFIER_L?)
+     |
+     ALIASES
+     -> ^(ALIASES)
+     |
+     HISTORY N?
+     -> ^(HISTORY N?)
+     |
+     KILL IDENTIFIER_L
+     -> ^(KILL IDENTIFIER_L)
+     |
+     REGISTER getpath USING getpath AS IDENTIFIER_L
+     -> ^(REGISTER getpath getpath IDENTIFIER_L)
+     |
+     EXEC getparam getpath
+     -> ^(EXEC getparam getpath)
+;
+
+getscript : getpath
+            -> ^(SCRIPT getpath)
+;
+
+getparam  : (
+              PARAM getpath
+	            -> ^(PARAM getpath)
+	            |
+	            PARAM_FILE getpath
+	            -> ^(PARAM_FILE getpath)
+            )+
+;
+
+getpath: PATH | IDENTIFIER_L
+;
+
+getpathwithdoubledot: getpath | DOUBLE_PERIOD
+;
+
+getkey: getpath
+;
+
+getvalue: getpath | QUOTEDSTRING | INTEGER | DOLLARVAR | LONGINTEGER | DOUBLENUMBER | FLOATNUMBER | LS
+;
+
+quit : QUIT
+;
+
+realias_clause : alias EQUAL identifier
     -> ^(REALIAS alias identifier)
 ;
 
@@ -190,12 +297,12 @@ foreach_statement : ( ( alias EQUAL )?  FOREACH rel LEFT_CURLY ) => foreach_comp
 ;
 
 foreach_complex_statement : ( alias EQUAL )? foreach_clause_complex SEMI_COLON?
-                         -> ^( STATEMENT alias? foreach_clause_complex )
+                         -> ^( STATEMENT alias? foreach_clause_complex TEXT[$foreach_complex_statement.text] )
 ;
 
 foreach_simple_statement : ( alias EQUAL )? (foreach_clause_simple parallel_clause? 
                                                 | LEFT_PAREN foreach_clause_simple parallel_clause? RIGHT_PAREN) SEMI_COLON
-                        -> ^( STATEMENT alias? foreach_clause_simple parallel_clause? )
+                        -> ^( STATEMENT alias? foreach_clause_simple parallel_clause? TEXT[$foreach_simple_statement.text] )
 ;
 
 alias : identifier
